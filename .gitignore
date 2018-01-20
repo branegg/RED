@@ -1,0 +1,5 @@
+yarn.lock
+node_modules/
+yarn-error.log
+./build/js/bundle.js
+./build/css/global.css
