@@ -1,0 +1,35 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 5px;
+    background-color: #E31E24;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__item {
+        color: #000;
+        font-family: Myriad, sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: opacity 0.3s ease-in-out, color 0.15s ease-in-out;
+        padding: 5px;
+        opacity: 0;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

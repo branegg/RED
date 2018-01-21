@@ -1,9 +1,39 @@
 .header {
     width: 100%;
+    z-index: 200;
+    position: fixed;
+    top: 0;
 
     &__top {
-        position: fixed;
         width: 100%;
+        
+        &:hover {
+            .nav {
+                height: 50px;
+                box-shadow: inset 0px -50px 30px -40px rgba(0,0,0,0.75), 0px 11px 30px 14px rgba(0,0,0,0.75);
+
+                &__wrapper {
+                    height: 50px;
+                }
+
+                &__item {
+                    opacity: 1;
+                }
+            }
+
+            .header__pancake {
+                height: 180px;
+                cursor: pointer;
+            }
+
+            .header__arrow {
+                opacity: 1;
+            }
+
+            .header__logo {
+                margin-bottom: 20px;
+            }
+        }
     }
 
     &__shadow {
@@ -11,13 +41,13 @@
         top: 0;
         box-shadow: 0px 0px 100px 100px rgba(0,0,0,0.75);
         width: 100%;
-        height: 100px;
+        height: 50px;
         z-index: -1;
     }
 
     &__pancake {
         width: 100%;
-        height: 200px;
+        height: 160px;
         transition: all 0.3s ease-in-out;
         z-index: 100;
         background-image: url('./../img/pancake-background.png');
@@ -25,17 +55,21 @@
         background-position: bottom;
         background-repeat: no-repeat;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-end;
         align-items: center;
-
-        &:hover {
-            height: 230px;
-            cursor: pointer;
-        }
     }
 
     &__logo {
-        width: 130px;
-        margin-top: 50px;
+        width: 110px;
+        margin-bottom: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__arrow {
+        margin-bottom: 10px;
+        width: 150px;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
     }
 }
