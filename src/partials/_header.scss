@@ -1,13 +1,14 @@
 .header {
     width: 100%;
     z-index: 200;
-    position: fixed;
+    position: absolute;
     top: 0;
 
     &__top {
         width: 100%;
         
         &:hover {
+
             .nav {
                 height: 50px;
                 box-shadow: inset 0px -50px 30px -40px rgba(0,0,0,0.75), 0px 11px 30px 14px rgba(0,0,0,0.75);
@@ -50,7 +51,7 @@
         height: 160px;
         transition: all 0.3s ease-in-out;
         z-index: 100;
-        background-image: url('./../img/pancake-background.png');
+        background-image: url('./../images/pancake-background.png');
         background-size: 100% 600%;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -58,12 +59,20 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+
+        &--active {
+            height: 180px;
+        }
     }
 
     &__logo {
         width: 110px;
         margin-bottom: 30px;
         transition: all 0.3s ease-in-out;
+
+        &--active {
+            margin-bottom: 20px;
+        }
     }
 
     &__arrow {

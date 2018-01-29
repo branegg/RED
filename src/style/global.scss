@@ -1,19 +1,19 @@
 @import '../helpers/colors';
 @import '../helpers/fonts';
 
-body, html {
+body, html, p, a, button {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: #000;
 }
 
 .main-body {
-    height: 100vh;
-    width: 100vw;
-    background-image: url('./../img/main-background.png');
+    background-image: url('./../images/main-background.png');
     background-size: cover;
-    overflow: hidden;
 }
 
+@import '../partials/slider';
 @import '../partials/nav';
 @import '../partials/header';
-@import '../partials/slider';
+@import '../partials/footer';

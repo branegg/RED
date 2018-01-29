@@ -1,13 +1,81 @@
 .slider {
-    margin-top: 200px;
+    margin-top: 250px;
     width: 100%;
-    height: 60vh;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease-in-out;
+    filter: grayscale(0%);
 
     &__wrapper {
         width: 70%;
         height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__arrow {
+        background: none;
+        border: none;
+        font-family: Slick;
+        font-size: 140px;
+        color: $lightGray;
+        transition: color 0.15s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            color: $gray;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__previous {
+        margin-right: 10px;
+    }
+
+    &__next {
+        margin-left: 10px;
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 20px;
+    transition: transform 0.2s ease-in-out, filter 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &__title {
+        font-family: 'Adobe Garamond', sans-serif;
+        font-size: 46px;
+        font-weight: 600;
+        font-style: italic;
+        letter-spacing: -1px;
+        color: $gray;
+    }
+
+    &__photo {
+        width: 100%;
+        margin: 10px 0 15px;
+    }
+
+    &__description {
+        font-family: Myriad, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 110%;
     }
 }

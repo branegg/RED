@@ -21,3 +21,28 @@
     src: url('./../fonts/MyriadPro-Bold.otf');
     font-weight: 700;
 }
+
+@font-face {
+    font-family: "Adobe Garamond";
+    src: url('./../fonts/AGaramondPro-Regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Adobe Garamond";
+    src: url('./../fonts/AGaramondPro-SemiboldItalic.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Adobe Garamond";
+    src: url('./../fonts/AGaramondPro-BoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Slick;
+    src: url('./../fonts/slick.ttf');
+}

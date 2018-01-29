@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RED</title>
+    <link rel="shortcut icon" type="image/png" href="./build/images/favicon3.png" />
+    <link rel="stylesheet" href="./build/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./build/css/slick.css">
     <link rel="stylesheet" href="./build/css/global.css">
 </head>
 
@@ -24,16 +27,69 @@
             </nav>
             <div class="header__shadow"></div>
             <div class="header__pancake">
-                <img class="header__logo" src="./build/img/red-logo.png" alt="">
-                <img class="header__arrow" src="./build/img/arrow.svg" alt="">
+                <img class="header__logo" src="./build/images/red-logo.png" alt="">
+                <img class="header__arrow" src="./build/images/arrow.svg" alt="">
             </div>
         </div>
     </header>
     <main class="slider">
-
+        <button class="slider__arrow slider__previous"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <div class="slider__wrapper">
+            <a href="#" class="slider__item item">
+                <p class="item__title">
+                    projekt
+                </p>
+                <img class="item__photo" src="./build/images/project.jpg" alt="">
+                <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Consectetur adipiscing.
+                </p>
+            </a>
+            <a href="#" class="slider__item item">
+                <p class="item__title">
+                    studio dtp
+                </p>
+                <img class="item__photo" src="./build/images/dtp.jpg" alt="">
+                <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Consectetur adipiscing.
+                </p>
+            </a>
+            <a href="#" class="slider__item item">
+                <p class="item__title">
+                    poligrafia
+                </p>
+                <img class="item__photo" src="./build/images/poligraphy.jpg" alt="">
+                <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Consectetur adipiscing.
+                </p>
+            </a>
+            <a href="#" class="slider__item item">
+                <p class="item__title">
+                    fotografia
+                </p>
+                <img class="item__photo" src="./build/images/photography.jpg" alt="">
+                <p class="item__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Consectetur adipiscing.
+                </p>
+            </a>
+        </div>
+        <button class="slider__arrow slider__next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
     </main>
+    <footer class="footer">
+
+    </footer>
 
 </body>
+
+<script src='./build/js/jquery-3.3.1.js'></script>
+<script src='./build/js/slick.min.js'></script>
 <script src='./build/js/bundle.js'></script>
 
 </html>
