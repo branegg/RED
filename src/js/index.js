@@ -1,3 +1,9 @@
+// $(document).ready(function() {
+//     setTimeout(function() {
+//         $('.loading').remove();
+//     }, 2000);
+// });
+
 $(document).ready(function() {
     $('.slider__wrapper').slick({
         slidesToShow: 3,

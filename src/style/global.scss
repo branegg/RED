@@ -13,6 +13,22 @@ body, html, p, a, button {
     background-size: cover;
 }
 
+.loading {
+    z-index: 201;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fcfefc;
+
+    &__gif {
+        margin-top: 10%;
+    }
+}
+
 @import '../partials/slider';
 @import '../partials/nav';
 @import '../partials/header';
