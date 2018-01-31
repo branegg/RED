@@ -1,3 +1,22 @@
 .footer {
-    height: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+
+    &__wrapper {
+        width: 90%;
+        height: 50px;
+        background-color: rgba(0, 0, 0, .1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    &__item {
+        font-family: Myriad, sans-serif;
+        color: rgba(0, 0, 0, .7)
+    }
 }

@@ -7,19 +7,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
+
+    &__logo {
+        height: 80%;
+        opacity: 0;
+    }
+
+    &__close {
+        position: fixed;
+        top: 80px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: $red;
+        border-radius: 5px;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+        font-size: 22px;
+        transition: opacity 0.3s ease-in-out;
+        display: none;
+        opacity: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
 
     &__wrapper {
-        width: 80%;
+        width: 70%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         height: 0;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
+        margin-right: 20px;
 
         &--active {
             height: 50px;
         }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 
     &__item {

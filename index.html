@@ -8,8 +8,9 @@
     <title>RED</title>
     <link rel="shortcut icon" type="image/png" href="./build/images/favicon3.png" />
     <link rel="stylesheet" href="./build/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./build/vendor/jquery/jquery-ui.min.css">
     <link rel="stylesheet" href="./build/css/slick.css">
-    <link rel="stylesheet" href="./build/css/global.css">
+    <link rel="stylesheet" href="./build/css/global.css?ver=1">
 </head>
 
 <body class="main-body">
@@ -22,15 +23,22 @@
         <div class="header__top">
             <nav class="nav">
                 <div class="nav__wrapper">
-                    <a href="#" class="nav__item">Strona Główna</a>
-                    <a href="#" class="nav__item">O nas</a>
-                    <a href="#" class="nav__item">Realizacje</a>
-                    <a href="#" class="nav__item">Zaufali nam</a>
-                    <a href="#" class="nav__item">Kontakt</a>
+                    <!-- <img class="nav__logo" src="./build/images/red-logo-black.png" alt=""> -->
+                    <div class="nav__menu">
+                        <a href="#" class="nav__item">Strona Główna</a>
+                        <a href="#" class="nav__item">O nas</a>
+                        <a href="#" class="nav__item">Realizacje</a>
+                        <a href="#" class="nav__item">Zaufali nam</a>
+                        <a href="#" class="nav__item">Kontakt</a>
+                    </div>
                 </div>
+                <!-- <button class="nav__close">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </button> -->
             </nav>
             <div class="header__shadow"></div>
-            <div class="header__pancake">
+            <div class="header__wrapper">
+                <img class="header__pancake" src="./build/images/pancake-background.png" alt="">
                 <img class="header__logo" src="./build/images/red-logo.png" alt="">
                 <img class="header__arrow" src="./build/images/arrow.svg" alt="">
             </div>
@@ -87,13 +95,17 @@
         <button class="slider__arrow slider__next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
     </main>
     <footer class="footer">
-
+        <div class="footer__wrapper">
+            <p class="footer__item">© 2018 RED Paweł Brankiewicz</p>
+            <p class="footer__item">Projekt i realizacja: Szymek Prześcieradło</p>
+        </div>
     </footer>
 
 </body>
 
 <script src='./build/js/jquery-3.3.1.js'></script>
+<script src='./build/vendor/jquery/jquery-ui.min.js'></script>
 <script src='./build/js/slick.min.js'></script>
-<script src='./build/js/bundle.js'></script>
+<script src='./build/js/bundle.js?ver=1'></script>
 
 </html>
