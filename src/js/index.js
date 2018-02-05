@@ -75,7 +75,7 @@ $(document).ready(function () {
         axis: 'y',
         containment: [0, 0, 0, '800px'],
         stop: function () {
-            if (header.css('top') > '200px' && header.css('top') != 'auto') {
+            if (header.css('top') > '200px') {
                 header.animate({
                     top: '800px'
                 }, 1000);
